@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Source+Sans+3:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Source+Sans+3:wght@300;400;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700&family=Source+Sans+3:wght@300;400;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700&family=Source+Sans+3:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<script src="https://cdn.tailwindcss.com"></script>
+
+<style>
+h1,h2,h3,.font-headline{font-family:'Barlow Condensed',sans-serif;}
+body,p,li,a,.font-#page-home {font-family:'Source Sans 3',sans-serif;}
+#page-home {background:#ffffff;color:#2C2C2C;}
+.accent-orange{color:#E87722;}
+.bg-primary{background-color:#1A4F7A;}
+.bg-secondary{background-color:#E87722;}
+.text-primary{color:#1A4F7A;}
+.border-secondary{border-color:#E87722;}
+</style>
+<style>
+  @media(max-width:768px){
+    .nav-desktop{display:none!important;}
+    #nav-toggle{display:flex!important;align-items:center;justify-content:center;}
+    .nav-logo img{height:44px!important;}
+}</style>
+<style>
+  #page-about { font-family: 'Source Sans 3', sans-serif; background: #ffffff; color: #2C2C2C; }
+  h1, h2, h3, h4 { font-family: 'Barlow Condensed', sans-serif; }
+  .accent { color: #E87722; }
+  .bg-primary { background-color: #1A4F7A; }
+  .text-primary { color: #1A4F7A; }
+  .border-accent { border-color: #E87722; }
+</style>
+<style>
+  @media(max-width:768px){
+    .nav-desktop{display:none!important;}
+    #nav-toggle{display:flex!important;align-items:center;justify-content:center;}
+    .nav-logo img{height:44px!important;}
+}</style>
+<style>
+  #page-services { font-family: 'Source Sans 3', sans-serif; background: #ffffff; color: #2C2C2C; }
+  h1, h2, h3, h4 { font-family: 'Barlow Condensed', sans-serif; }
+  .accent { color: #E87722; }
+  .btn-primary { background: #E87722; color: #fff; padding: 0.75rem 1.75rem; font-family: 'Barlow Condensed', sans-serif; font-weight: 600; font-size: 1.1rem; letter-spacing: 0.03em; display: inline-block; transition: background 0.2s; }
+  .btn-primary:hover { background: #cf6510; }
+  .btn-outline { border: 2px solid #1A4F7A; color: #1A4F7A; padding: 0.65rem 1.5rem; font-family: 'Barlow Condensed', sans-serif; font-weight: 600; font-size: 1.05rem; letter-spacing: 0.03em; display: inline-block; }
+  .service-tag { background: #E87722; color: #fff; font-family: 'Barlow Condensed', sans-serif; font-weight: 600; font-size: 0.78rem; letter-spacing: 0.08em; text-transform: uppercase; padding: 0.2rem 0.65rem; display: inline-block; }
+</style>
+<style>
+  @media(max-width:768px){
+    .nav-desktop{display:none!important;}
+    #nav-toggle{display:flex!important;align-items:center;justify-content:center;}
+    .nav-logo img{height:44px!important;}
+}</style>
+<style>
+  #page-contact { font-family: 'Source Sans 3', sans-serif; background: #ffffff; color: #2C2C2C; }
+  h1, h2, h3, h4 { font-family: 'Barlow Condensed', sans-serif; font-weight: 600; }
+  .accent { color: #E87722; }
+  .btn-primary { background: #E87722; color: #ffffff; font-family: 'Barlow Condensed', sans-serif; font-weight: 600; letter-spacing: 0.03em; }
+  .btn-primary:hover { background: #cf6910; }
+  input:focus, textarea:focus, select:focus { outline: 2px solid #1A4F7A; outline-offset: 0; }
+</style>
+<style>
+  @media(max-width:768px){
+    .nav-desktop{display:none!important;}
+    #nav-toggle{display:flex!important;align-items:center;justify-content:center;}
+    .nav-logo img{height:44px!important;}
+}</style>
+<style>
+  h1,h2,h3,h4,.font-headline { font-family:'Barlow Condensed',sans-serif; }
+  body,p,span,a,li,label,input,select,textarea,.font-#page-gallery { font-family:'Source Sans 3',sans-serif; }
+  #page-gallery { background-color:#ffffff; color:#2C2C2C; }
+  .accent-border { border-left:4px solid #E87722; }
+  .placeholder-box { background:#e9ecef; border:2px dashed #ced4da; }
+  .tag-pill { background:#1A4F7A; color:#fff; font-family:'Source Sans 3',sans-serif; font-size:0.72rem; letter-spacing:0.04em; }
+</style>
+<style>
+  @media(max-width:768px){
+    .nav-desktop{display:none!important;}
+    #nav-toggle{display:flex!important;align-items:center;justify-content:center;}
+    .nav-logo img{height:44px!important;}
+}</style>
+<style>
+  #page-team { font-family: 'Source Sans 3', sans-serif; background-color: #ffffff; color: #2C2C2C; }
+  h1, h2, h3, h4, .headline { font-family: 'Barlow Condensed', sans-serif; }
+  .accent-line { width: 48px; height: 4px; background: #E87722; display: block; }
+  .avatar-placeholder { width: 120px; height: 120px; border-radius: 50%; background: #dee2e6; display: flex; align-items: center; justify-content: center; }
+  .texture-bg { background-color: #1A4F7A; }
+  .card-warm { background: #f8f9fa; border: 1px solid #e9ecef; }
+</style>
+<style>
+  @media(max-width:768px){
+    .nav-desktop{display:none!important;}
+    #nav-toggle{display:flex!important;align-items:center;justify-content:center;}
+    .nav-logo img{height:44px!important;}
+}</style>
+<style>
+  #page-karriere { font-family: 'Source Sans 3', sans-serif; background: #ffffff; color: #2C2C2C; }
+  h1, h2, h3, h4 { font-family: 'Barlow Condensed', sans-serif; }
+  .accent { color: #E87722; }
+  .btn-primary { background: #E87722; color: #ffffff; }
+  .btn-primary:hover { background: #cf6a1a; }
+  .btn-outline { border: 2px solid #1A4F7A; color: #1A4F7A; }
+  .btn-outline:hover { background: #1A4F7A; color: #ffffff; }
+</style>
+<style>
+  @media(max-width:768px){
+    .nav-desktop{display:none!important;}
+    #nav-toggle{display:flex!important;align-items:center;justify-content:center;}
+    .nav-logo img{height:44px!important;}
+}</style>
+<style>* { box-sizing: border-box; } html, body { margin: 0; padding: 0; }</style>
+</head>
+<body>
+
+<nav style="position:fixed;top:0;left:0;right:0;z-index:9999;background:rgba(10,10,20,0.92);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border-bottom:1px solid rgba(255,255,255,0.08);padding:0 24px;height:64px;display:flex;align-items:center;justify-content:space-between;">
+  <div class="nav-logo"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAU0AAADLCAYAAADqbsG1AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ppVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDowMTgwMTE3NDA3MjA2ODExODIyQTlCMUU3ODNGODI4RCIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDpGOUExRThERjU3Q0UxMUU2QUFCRTkwOEJDNUE1MDUxMiIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDpGOUExRThERTU3Q0UxMUU2QUFCRTkwOEJDNUE1MDUxMiIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBJbGx1c3RyYXRvciBDUzYgKE1hY2ludG9zaCkiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDowMjgwMTE3NDA3MjA2ODExODIyQTlCMUU3ODNGODI4RCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDowMjgwMTE3NDA3MjA2ODExODIyQTlCMUU3ODNGODI4RCIvPiA8L3JkZjpEZXNj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" alt="Günther Dürr GmbH" style="height:48px;width:auto;object-fit:contain;display:block;"></div>
+  <!-- Desktop links -->
+  <div class="nav-desktop" style="display:flex;gap:28px;align-items:center;">
+    <a href="index.html"    style="color:rgba(255,255,255,0.55);text-decoration:none;font-size:0.875rem;font-weight:500;letter-spacing:0.3px;transition:color 0.2s;">Home</a>
+    <a href="about.html"    style="color:rgba(255,255,255,0.55);text-decoration:none;font-size:0.875rem;font-weight:500;letter-spacing:0.3px;transition:color 0.2s;">Über uns</a>
+    <a href="services.html" style="color:rgba(255,255,255,0.55);text-decoration:none;font-size:0.875rem;font-weight:500;letter-spacing:0.3px;transition:color 0.2s;">Leistungen</a>
+    <a href="contact.html"  style="color:white;text-decoration:none;font-size:0.875rem;font-weight:600;background:#1A4F7A;padding:8px 20px;border-radius:8px;transition:opacity 0.2s;">Kontakt</a>
+    <a href="karriere.html" style="color:rgba(255,255,255,0.9);text-decoration:none;font-size:0.875rem;font-weight:500;letter-spacing:0.3px;transition:color 0.2s;">Karriere</a>
+  </div>
+  <!-- Hamburger button (mobile only) -->
+  <button id="nav-toggle" aria-label="Menü" style="display:none;background:none;border:none;cursor:pointer;padding:8px;color:#fff;" onclick="(function(){var m=document.getElementById('nav-mobile');var open=m.style.display==='flex';m.style.display=open?'none':'flex';document.getElementById('nav-toggle').setAttribute('aria-expanded',String(!open));})()">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+  </button>
+</nav>
+<!-- Mobile dropdown -->
+<div id="nav-mobile" style="display:none;position:fixed;top:64px;left:0;right:0;z-index:9998;background:rgba(10,10,20,0.97);backdrop-filter:blur(20px);padding:16px 24px 24px;flex-direction:column;gap:0;border-bottom:1px solid rgba(255,255,255,0.08);">
+  <a href="index.html"    style="color:rgba(255,255,255,0.85);text-decoration:none;font-size:1rem;font-weight:500;padding:14px 0;border-bottom:1px solid rgba(255,255,255,0.08);display:block;">Home</a>
+  <a href="about.html"    style="color:rgba(255,255,255,0.85);text-decoration:none;font-size:1rem;font-weight:500;padding:14px 0;border-bottom:1px solid rgba(255,255,255,0.08);display:block;">Über uns</a>
+  <a href="services.html" style="color:rgba(255,255,255,0.85);text-decoration:none;font-size:1rem;font-weight:500;padding:14px 0;border-bottom:1px solid rgba(255,255,255,0.08);display:block;">Leistungen</a>
+  <a href="contact.html"  style="color:white;text-decoration:none;font-size:1rem;font-weight:700;background:#1A4F7A;padding:14px 20px;border-radius:8px;display:block;text-align:center;margin-top:12px;">Kontakt</a>
+  <a href="karriere.html" style="color:rgba(255,255,255,0.85);text-decoration:none;font-size:1rem;font-weight:500;padding:14px 0;border-bottom:1px solid rgba(255,255,255,0.08);display:block;">Karriere</a>
+</div>
+
+
+<!-- NAV AUTOMATICALLY INSERTED -->
+
+<!-- HERO -->
+<section class="relative overflow-hidden" style="min-height:560px;">
+  <div class="absolute inset-0">
+    <img class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1600&q=80&auto=format&fit=crop" alt="Handwerker bei der Arbeit – Rohrinstallation">
+    <div class="absolute inset-0" style="background:rgba(0,0,0,0.52);"></div>
+  </div>
+  <div class="relative z-10 max-w-5xl mx-auto px-6 py-28 flex flex-col justify-center" style="min-height:560px;">
+    <p class="text-sm font-semibold tracking-widest uppercase mb-3" style="color:#E87722;">Günther Dürr GmbH · Karlsruhe</p>
+    <h1 class="font-semibold leading-tight mb-5" style="font-size:clamp(2.4rem,5vw,4rem);color:#ffffff;">Gutes Handwerk braucht<br>gute Menschen dahinter.</h1>
+    <p class="text-lg max-w-xl mb-8" style="color:rgba(255,255,255,0.88);font-family:'Source Sans 3',sans-serif;">Wir sind ein eingespieltes Team in der Karlsruher Oststadt – inhabergeführt, seit über 70 Jahren im Geschäft. Wer hier anfängt, bleibt meistens lange. Das sagt mehr als jede Stellenanzeige.</p>
+    <div class="flex flex-wrap gap-4">
+      <a href="#offene-stellen" class="btn-primary inline-block px-7 py-3 rounded font-semibold text-base transition">Offene Stellen ansehen</a>
+      <a href="#bewerbung" class="inline-block px-7 py-3 rounded font-semibold text-base border-2 transition" style="border-color:rgba(255,255,255,0.6);color:#ffffff;">Initiativ bewerben</a>
+    </div>
+  </div>
+</section>
+
+<!-- TRUST STRIP -->
+<div style="background:#1A4F7A;">
+  <div class="max-w-5xl mx-auto px-6 py-4 flex flex-wrap gap-6 items-center justify-between">
+    <span class="text-sm font-semibold" style="color:rgba(255,255,255,0.92);">Inhabergeführter Meisterbetrieb</span>
+    <span class="hidden sm:block" style="color:rgba(255,255,255,0.3);">|</span>
+    <span class="text-sm font-semibold" style="color:rgba(255,255,255,0.92);">70+ Jahre Betriebsgeschichte</span>
+    <span class="hidden sm:block" style="color:rgba(255,255,255,0.3);">|</span>
+    <span class="text-sm font-semibold" style="color:rgba(255,255,255,0.92);">SHK · Klima · Lüftung · Blechnerei</span>
+    <span class="hidden sm:block" style="color:rgba(255,255,255,0.3);">|</span>
+    <span class="text-sm font-semibold" style="color:rgba(255,255,255,0.92);">Karlsruhe-Oststadt</span>
+  </div>
+</div>
+
+<!-- OFFENE STELLEN -->
+<section id="offene-stellen" class="py-20" style="background:#ffffff;">
+  <div class="max-w-5xl mx-auto px-6">
+    <div class="mb-12">
+      <p class="text-sm font-semibold tracking-widest uppercase mb-2" style="color:#E87722;">Stellenangebote</p>
+      <h2 class="font-semibold leading-tight mb-4" style="font-size:clamp(2rem,4vw,3rem);color:#1A4F7A;">Offene Stellen bei Dürr</h2>
+      <p class="text-base max-w-xl" style="color:#555;font-family:'Source Sans 3',sans-serif;">Wir suchen Verstärkung für unser Team – Menschen, die ihr Handwerk verstehen und gern vor Ort arbeiten, statt von Baustelle zu Baustelle zu hetzen.</p>
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-8">
+
+      <!-- Job 1 -->
+      <div class="border rounded-lg p-8 flex flex-col" style="border-color:#e0e6ed;">
+        <div class="flex items-start justify-between mb-4">
+          <div>
+            <span class="text-xs font-semibold uppercase tracking-wide px-2 py-1 rounded mr-2" style="background:#e8f1f8;color:#1A4F7A;">Vollzeit</span>
+            <span class="text-xs font-semibold uppercase tracking-wide px-2 py-1 rounded" style="background:#fef3eb;color:#1A3A5C;">Fachkraft</span>
+          </div>
+        </div>
+        <h3 class="font-semibold mb-2" style="font-size:1.6rem;color:#2C2C2C;">Anlagenmechaniker SHK <span style="color:#1A4F7A;">(m/w/d)</span></h3>
+        <p class="text-sm mb-5 flex-1" style="color:#555;font-family:'Source Sans 3',sans-serif;">Du übernimmst Sanitär- und Heizungsinstallationen in Karlsruher Wohn- und Gewerbegebäuden – vom Erstgespräch bis zur fertigen Anlage. Klare Aufgaben, kurze Wege, direkter Kontakt zur Betriebsleitung.</p>
+        <ul class="mb-6 space-y-2">
+          <li class="flex items-start gap-2 text-sm" style="color:#333;">
+            <svg class="mt-0.5 flex-shrink-0" width="16" height="16" fill="none" viewBox="0 0 24 24"><circle cx="12" cy="12" r="12" fill="#1A4F7A" opacity="0.1"/><path d="M7 12.5l3.5 3.5 6.5-7" stroke="#1A4F7A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            Abgeschlossene Ausbildung als Anlagenmechaniker SHK
+          </li>
+          <li class="flex items-start gap-2 text-sm" style="color:#333;">
+            <svg class="mt-0.5 flex-shrink-0" width="16" height="16" fill="none" viewBox="0 0 24 24"><circle cx="12" cy="12" r="12" fill="#1A4F7A" opacity="0.1"/><path d="M7 12.5l3.5 3.5 6.5-7" stroke="#1A4F7A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            Erfahrung in Sanitär- oder Heizungsinstallation
+          </li>
+          <li class="flex items-start gap-2 text-sm" style="color:#333;">
+            <svg class="mt-0.5 flex-shrink-0" width="16" height="16" fill="none" viewBox="0 0 24 24"><circle cx="12" cy="12" r="12" fill="#1A4F7A" opacity="0.1"/><path d="M7 12.5l3.5 3.5 6.5-7" stroke="#1A4F7A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            Selbstständige, sorgfältige Arbeitsweise
+          </li>
+          <li class="flex items-start gap-2 text-sm" style="color:#333;">
+            <svg class="mt-0.5 flex-shrink-0" width="16" height="16" fill="none" viewBox="0 0 24 24"><circle cx="12" cy="12" r="12" fill="#1A4F7A" opacity="0.1"/><path d="M7 12.5l3.5 3.5 6.5-7" stroke="#1A4F7A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            Führerschein Klasse B
+          </li>
+          <li class="flex items-start gap-2 text-sm" style="color:#333;">
+            <svg class="mt-0.5 flex-shrink-0" width="16" height="16" fill="none" viewBox="0 0 24 24"><circle cx="12" cy="12" r="12" fill="#1A4F7A" opacity="0.1"/><path d="M7 12.5l3.5 3.5 6.5-7" stroke="#1A4F7A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            Freude an direktem Kundenkontakt vor Ort
+          </li>
+        </ul>
+        <a href="mailto:info@duerr-ka.de?subject=Bewerbung: Anlagenmechaniker SHK" class="btn-primary inline-block text-center px-6 py-3 rounded font-semibold text-sm transition">Jetzt bewerben</a>
+      </div>
+
+      <!-- Job 2 -->
+      <div class="border rounded-lg p-8 flex flex-col" style="border-color:#e0e6ed;">
+        <div class="flex items-start justify-between mb-4">
+          <div>
+            <span class="text-xs font-semibold uppercase tracking-wide px-2 py-1 rounded mr-2" style="background:#e8f1f8;color:#1A4F7A;">Vollzeit</span>
+            <span class="text-xs font-semibold uppercase tracking-wide px-2 py-1 rounded" style="background:#fef3eb;color:#1A3A5C;">Fachkraft</span>
+          </div>
+        </div>
+        <h3 class="font-semibold mb-2" style="font-size:1.6rem;color:#2C2C2C;">Kälte- und Klimatechniker <span style="color:#1A4F7A;">(m/w/d)</span></h3>
+        <p class="text-sm mb-5 flex-1" style="color:#555;font-family:'Source Sans 3',sans-serif;">Du installierst und wartest Klima- und Lüftungsanlagen bei Privatkunden und Gewerbebetrieben im Raum Karlsruhe. Modernes Equipment, geregelte Einsatzplanung, kein anonymer Großbetrieb.</p>
+        <ul class="mb-6 space-y-2">
+          <li class="flex items-start gap-2 text-sm" style="color:#333;">
+            <svg class="mt-0.5 flex-shrink-0" width="16" height="16" fill="none" viewBox="0 0 24 24"><circle cx="12" cy="12" r="12" fill="#1A4F7A" opacity="0.1"/><path d="M7 12.5l3.5 3.5 6.5-7" stroke="#1A4F7A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            Ausbildung als Kälte- und Klimaanlagenbauer oder vergleichbar
+          </li>
+          <li class="flex items-start gap-2 text-sm" style="color:#333;">
+            <svg class="mt-0.5 flex-shrink-0" width="16" height="16" fill="none" viewBox="0 0 24 24"><circle cx="12" cy="12" r="12" fill="#1A4F7A" opacity="0.1"/><path d="M7 12.5l3.5 3.5 6.5-7" stroke="#1A4F7A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            Sachkundenachweis Kältemittel (Kat. I) von Vorteil
+          </li>
+          <li class="flex items-start gap-2 text-sm" style="color:#333;">
+            <svg class="mt-0.5 flex-shrink-0" width="16" height="16" fill="none" viewBox="0 0 24 24"><circle cx="12" cy="12" r="12" fill="#1A4F7A" opacity="0.1"/><path d="M7 12.5l3.5 3.5 6.5-7" stroke="#1A4F7A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            Erfahrung in Montage und Wartung von Splitgeräten
+          </li>
+          <li class="flex items-start gap-2 text-sm" style="color:#333;">
+            <svg class="mt-0.5 flex-shrink-0" width="16" height="16" fill="none" viewBox="0 0 24 24"><circle cx="12" cy="12" r="12" fill="#1A4F7A" opacity="0.1"/><path d="M7 12.5l3.5 3.5 6.5-7" stroke="#1A4F7A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            Führerschein Klasse B
+          </li>
+        </ul>
+        <a href="mailto:info@duerr-ka.de?subject=Bewerbung: Kälte- und Klimatechniker" class="btn-primary inline-block text-center px-6 py-3 rounded font-semibold text-sm transition">Jetzt bewerben</a>
+      </div>
+
+      <!-- Job 3 -->
+      <div class="border rounded-lg p-8 flex flex-col" style="border-color:#e0e6ed;">
+        <div class="flex items-start justify-between mb-4">
+          <div>
+            <span class="text-xs font-semibold uppercase tracking-wide px-2 py-1 rounded mr-2" style="background:#e8f1f8;color:#1A4F7A;">Ausbildung</span>
+            <span class="text-xs font-semibold uppercase tracking-wide px-2 py-1 rounded" style="background:#f0fdf4;color:#166534;">Start: nächster Ausbildungsbeginn</span>
+          </div>
+        </div>
+        <h3 class="font-semibold mb-2" style="font-size:1.6rem;color:#2C2C2C;">Auszubildender SHK <span style="color:#1A4F7A;">(m/w/d)</span></h3>
+        <p class="text-sm mb-5 flex-1" style="color:#555;font-family:'Source Sans 3',sans-serif;">Drei Jahre Ausbildung bei einem Meisterbetrieb mit über 70 Jahren Erfahrung. Du lernst das Handwerk von Grund auf – Sanitär, Heizung, Klima – und arbeitest von Anfang an auf echten Baustellen in Karlsruhe.</p>
+        <ul class="mb-6 space-y-2">
+          <li class="flex items-start gap-2 text-sm" style="color:#333;">
+            <svg class="mt-0.5 flex-shrink-0" width="16" height="16" fill="none" viewBox="0 0 24 24"><circle cx="12" cy="12" r="12" fill="#1A4F7A" opacity="0.1"/><path d="M7 12.5l3.5 3.5 6.5-7" stroke="#1A4F7A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            Hauptschulabschluss oder höher
+          </li>
+          <li class="flex items-start gap-2 text-sm" style="color:#333;">
+            <svg class="mt-0.5 flex-shrink-0" width="16" height="16" fill="none" viewBox="0 0 24 24"><circle cx="12" cy="12" r="12" fill="#1A4F7A" opacity="0.1"/><path d="M7 12.5l3.5 3.5 6.5-7" stroke="#1A4F7A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            Technisches Interesse und handwerkliches Geschick
+          </li>
+          <li class="flex items-start gap-2 text-sm" style="color:#333;">
+            <svg class="mt-0.5 flex-shrink-0" width="16" height="16" fill="none" viewBox="0 0 24 24"><circle cx="12" cy="12" r="12" fill="#1A4F7A" opacity="0.1"/><path d="M7 12.5l3.5 3.5 6.5-7" stroke="#1A4F7A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            Zuverlässigkeit und Teamgeist
+          </li>
+        </ul>
+        <a href="mailto:info@duerr-ka.de?subject=Bewerbung: Ausbildung Anlagenmechaniker SHK" class="btn-primary inline-block text-center px-6 py-3 rounded font-semibold text-sm transition">Jetzt bewerben</a>
+      </div>
+
+      <!-- Job 4 – Initiativbewerbung -->
+      <div class="border-2 border-dashed rounded-lg p-8 flex flex-col justify-center items-center text-center" style="border-color:#1A4F7A;background:#f8fafc;">
+        <div class="w-12 h-12 rounded-full flex items-center justify-center mb-4" style="background:#e8f1f8;">
+          <svg width="24" height="24" fill="none" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14" stroke="#1A4F7A" stroke-width="2" stroke-linecap="round"/></svg>
+        </div>
+        <h3 class="font-semibold mb-2" style="font-size:1.4rem;color:#1A4F7A;">Nichts Passendes dabei?</h3>
+        <p class="text-sm mb-5" style="color:#555;font-family:'Source Sans 3',sans-serif;">Wer gut ist, findet bei uns meistens trotzdem einen Platz. Initiativbewerbungen lesen wir persönlich und melden uns zurück.</p>
+        <a href="mailto:info@duerr-ka.de?subject=Initiativbewerbung" class="btn-outline inline-block px-6 py-3 rounded font-semibold text-sm transition">Initiativ bewerben</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- VORTEILE -->
+<section class="py-20" style="background:#f8f9fa;">
+  <div class="max-w-5xl mx-auto px-6">
+    <div class="mb-12">
+      <p class="text-sm font-semibold tracking-widest uppercase mb-2" style="color:#E87722;">Warum Dürr</p>
+      <h2 class="font-semibold leading-tight" style="font-size:clamp(2rem,4vw,3rem);color:#1A4F7A;">Was Sie hier erwartet</h2>
+    </div>
+    <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-8">
+
+      <div class="bg-white rounded-lg p-7" style="border:1px solid #e8edf2;">
+        <div class="w-10 h-10 rounded flex items-center justify-center mb-4" style="background:#e8f1f8;">
+          <svg width="22" height="22" fill="none" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="3" stroke="#1A4F7A" stroke-width="1.8"/><path d="M8 12h8M8 8h5M8 16h3" stroke="#1A4F7A" stroke-width="1.8" stroke-linecap="round"/></svg>
+        </div>
+        <h4 class="font-semibold mb-2" style="font-size:1.2rem;color:#2C2C2C;">Faire, pünktliche Bezahlung</h4>
+        <p class="text-sm" style="color:#555;">Was vereinbart ist, kommt pünktlich. Kein Durchlauferhitzer-Betrieb, sondern ein Unternehmen, das langfristig denkt.</p>
+      </div>
+
+      <div class="bg-white rounded-lg p-7" style="border:1px solid #e8edf2;">
+        <div class="w-10 h-10 rounded flex items-center justify-center mb-4" style="background:#e8f1f8;">
+          <svg width="22" height="22" fill="none" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4" stroke="#1A4F7A" stroke-width="1.8"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7" stroke="#1A4F7A" stroke-width="1.8" stroke-linecap="round"/></svg>
+        </div>
+        <h4 class="font-semibold mb-2" style="font-size:1.2rem;color:#2C2C2C;">Eingespieltes Team</h4>
+        <p class="text-sm" style="color:#555;">Viele unserer Mitarbeiter sind seit Jahren dabei. Das zeigt sich im Umgang miteinander: sachlich, direkt, respektvoll.</p>
+      </div>
+
+      <div class="bg-white rounded-lg p-7" style="border:1px solid #e8edf2;">
+        <div class="w-10 h-10 rounded flex items-center justify-center mb-4" style="background:#e8f1f8;">
+          <svg width="22" height="22" fill="none" viewBox="0 0 24 24"><path d="M12 3l2.5 5h5.5l-4.5 4 1.5 6L12 15l-5 3 1.5-6L4 8h5.5z" stroke="#1A4F7A" stroke-width="1.8" stroke-linejoin="round"/></svg>
+        </div>
+        <h4 class="font-semibold mb-2" style="font-size:1.2rem;color:#2C2C2C;">Breites Aufgabenspektrum</h4>
+        <p class="text-sm" style="color:#555;">Sanitär, Heizung, Klima, Lüftung – wer bei uns arbeitet, lernt das Handwerk in seiner ganzen Breite kennen, nicht nur eine Nische.</p>
+      </div>
+
+      <div class="bg-white rounded-lg p-7" style="border:1px solid #e8edf2;">
+        <div class="w-10 h-10 rounded flex items-center justify-center mb-4" style="background:#e8f1f8;">
+          <svg width="22" height="22" fill="none" viewBox="0 0 24 24"><path d="M3 12l9-9 9 9M5 10v9a1 1 0 001 1h4v-5h4v5h4a1 1 0 001-1v-9" stroke="#1A4F7A" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+        <h4 class="font-semibold mb-2" style="font-size:1.2rem;color:#2C2C2C;">Kurze Wege, klare Abläufe</h4>
+        <p class="text-sm" style="color:#555;">Inhabergeführt heißt: Sie sprechen direkt mit der Führung. Keine Ticketsysteme, kein Hierarchie-Labyrinth bei einfachen Fragen.</p>
+      </div>
+
+      <div class="bg-white rounded-lg p-7" style="border:1px solid #e8edf2;">
+        <div class="w-10 h-10 rounded flex items-center justify-center mb-4" style="background:#e8f1f8;">
+          <svg width="22" height="22" fill="none" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-2-8 2v7c0 6 8 10 8 10z" stroke="#1A4F7A" stroke-width="1.8" stroke-linejoin="round"/></svg>
+        </div>
+        <h4 class="font-semibold mb-2" style="font-size:1.2rem;color:#2C2C2C;">Meisterbetrieb mit Substanz</h4>
+        <p class="text-sm" style="color:#555;">Über 70 Jahre Betriebsgeschichte in Karlsruhe. Kein Start-up, das nächstes Jahr vielleicht noch existiert – sondern ein verlässlicher Arbeitgeber.</p>
+      </div>
+
+      <div class="bg-white rounded-lg p-7" style="border:1px solid #e8edf2;">
+        <div class="w-10 h-10 rounded flex items-center justify-center mb-4" style="background:#e8f1f8;">
+          <svg width="22" height="22" fill="none" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" stroke="#1A4F7A" stroke-width="1.8"/><path d="M12 7v5l3 3" stroke="#1A4F7A" stroke-width="1.8" stroke-linecap="round"/></svg>
+        </div>
+        <h4 class="font-semibold mb-2" style="font-size:1.2rem;color:#2C2C2C;">Geregelte Arbeitszeiten</h4>
+        <p class="text-sm" style="color:#555;">Für einen Handwerksbetrieb dieser Größe sind die Einsätze gut planbar. Notfalldienste sind organisiert, nicht endlos.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- KULTUR + FOTO -->
+<section class="py-20" style="background:#1A4F7A;">
+  <div class="max-w-5xl mx-auto px-6">
+    <div class="grid md:grid-cols-2 gap-12 items-center">
+      <div>
+        <p class="text-sm font-semibold tracking-widest uppercase mb-3" style="color:#E87722;">Arbeitsalltag</p>
+        <h2 class="font-semibold leading-tight mb-6" style="font-size:clamp(1.8rem,4vw,2.8rem);color:#ffffff;">So arbeiten wir zusammen</h2>
+        <p class="text-base mb-5 leading-relaxed" style="color:rgba(255,255,255,0.88);font-family:'Source Sans 3',sans-serif;">Morgens kurze Absprache, dann auf die Baustelle. Unsere Monteure fahren meistens zu zweit, jedenfalls bei größeren Jobs. Wer eine Frage hat, ruft kurz an – es nimmt jemand ab, der die Antwort kennt.</p>
+        <p class="text-base mb-5 leading-relaxed" style="color:rgba(255,255,255,0.88);font-family:'Source Sans 3',sans-serif;">Wir machen Heizungen, Bäder, Klimaanlagen – und manchmal alles auf einmal in einem Altbau, wo nichts nach Plan läuft. Wer das mag, ist bei uns richtig. Wer nur nach Schema-F abarbeiten will, weniger.</p>
+        <p class="text-base leading-relaxed" style="color:rgba(255,255,255,0.75);font-family:'Source Sans 3',sans-serif;">Die Karlsruher Oststadt, die Südstadt, Durlach – wir kennen die Häuser, die Eigentümer, oft auch die Familien. Das ist kein Verkaufsargument, sondern einfach wie es ist, wenn man über 70 Jahre am gleichen Ort arbeitet.</p>
+      </div>
+      <div class="rounded-lg overflow-hidden" style="height:380px;">
+        <img class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=800&q=80&auto=format&fit=crop" alt="Handwerker bei der Arbeit im Team">
+      </div></div></div></section>
+<img src="/api/track?id=1781168453939" width="1" height="1" style="display:none;position:absolute" alt="">
+</body>
+</html>
