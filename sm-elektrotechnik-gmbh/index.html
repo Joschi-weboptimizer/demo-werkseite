@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Barlow+Condensed:wght@600;700;800;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Barlow+Condensed:wght@600;700;800&display=swap" rel="stylesheet">
+<script>tailwind.config={theme:{extend:{colors:{"night":"#1A2E4A","amber":"#F5A623","cream":"#F4F2EE","ink":"#1C1C1C"},fontFamily:{"barlow":["\"Barlow Condensed\"","sans-serif"],"inter":["Inter","sans-serif"]}}}}</script>
+<script src="https://cdn.tailwindcss.com"></script>
+<style>
+.bg-night{background-color:#1A2E4A}
+.text-night{color:#1A2E4A}
+.border-night{border-color:#1A2E4A}
+.fill-night{fill:#1A2E4A}
+.ring-night{--tw-ring-color:#1A2E4A}
+.from-night{--tw-gradient-from:#1A2E4A;--tw-gradient-stops:var(--tw-gradient-from),var(--tw-gradient-to,rgba(26,46,74,0))}
+.to-night{--tw-gradient-to:#1A2E4A}
+.via-night{--tw-gradient-stops:var(--tw-gradient-from),#1A2E4A,var(--tw-gradient-to,rgba(26,46,74,0))}
+.bg-night\/5{background-color:rgba(26,46,74,0.05)}
+.text-night\/5{color:rgba(26,46,74,0.05)}
+.border-night\/5{border-color:rgba(26,46,74,0.05)}
+.bg-night\/10{background-color:rgba(26,46,74,0.1)}
+.text-night\/10{color:rgba(26,46,74,0.1)}
+.border-night\/10{border-color:rgba(26,46,74,0.1)}
+.bg-night\/15{background-color:rgba(26,46,74,0.15)}
+.text-night\/15{color:rgba(26,46,74,0.15)}
+.border-night\/15{border-color:rgba(26,46,74,0.15)}
+.bg-night\/20{background-color:rgba(26,46,74,0.2)}
+.text-night\/20{color:rgba(26,46,74,0.2)}
+.border-night\/20{border-color:rgba(26,46,74,0.2)}
+.bg-night\/25{background-color:rgba(26,46,74,0.25)}
+.text-night\/25{color:rgba(26,46,74,0.25)}
+.border-night\/25{border-color:rgba(26,46,74,0.25)}
+.bg-night\/30{background-color:rgba(26,46,74,0.3)}
+.text-night\/30{color:rgba(26,46,74,0.3)}
+.border-night\/30{border-color:rgba(26,46,74,0.3)}
+.bg-night\/40{background-color:rgba(26,46,74,0.4)}
+.text-night\/40{color:rgba(26,46,74,0.4)}
+.border-night\/40{border-color:rgba(26,46,74,0.4)}
+.bg-night\/50{background-color:rgba(26,46,74,0.5)}
+.text-night\/50{color:rgba(26,46,74,0.5)}
+.border-night\/50{border-color:rgba(26,46,74,0.5)}
+.bg-night\/60{background-color:rgba(26,46,74,0.6)}
+.text-night\/60{color:rgba(26,46,74,0.6)}
+.border-night\/60{border-color:rgba(26,46,74,0.6)}
+.bg-night\/70{background-color:rgba(26,46,74,0.7)}
+.text-night\/70{color:rgba(26,46,74,0.7)}
+.border-night\/70{border-color:rgba(26,46,74,0.7)}
+.bg-night\/75{background-color:rgba(26,46,74,0.75)}
+.text-night\/75{color:rgba(26,46,74,0.75)}
+.border-night\/75{border-color:rgba(26,46,74,0.75)}
+.bg-night\/80{background-color:rgba(26,46,74,0.8)}
+.text-night\/80{color:rgba(26,46,74,0.8)}
+.border-night\/80{border-color:rgba(26,46,74,0.8)}
+.bg-night\/90{background-color:rgba(26,46,74,0.9)}
+.text-night\/90{color:rgba(26,46,74,0.9)}
+.border-night\/90{border-color:rgba(26,46,74,0.9)}
+.bg-night\/95{background-color:rgba(26,46,74,0.95)}
+.text-night\/95{color:rgba(26,46,74,0.95)}
+.border-night\/95{border-color:rgba(26,46,74,0.95)}
+.bg-amber{background-color:#F5A623}
+.text-amber{color:#F5A623}
+.border-amber{border-color:#F5A623}
+.fill-amber{fill:#F5A623}
+.ring-amber{--tw-ring-color:#F5A623}
+.from-amber{--tw-gradient-from:#F5A623;--tw-gradient-stops:var(--tw-gradient-from),var(--tw-gradient-to,rgba(245,166,35,0))}
+.to-amber{--tw-gradient-to:#F5A623}
+.via-amber{--tw-gradient-stops:var(--tw-gradient-from),#F5A623,var(--tw-gradient-to,rgba(245,166,35,0))}
+.bg-amber\/5{background-color:rgba(245,166,35,0.05)}
+.text-amber\/5{color:rgba(245,166,35,0.05)}
+.border-amber\/5{border-color:rgba(245,166,35,0.05)}
+.bg-amber\/10{background-color:rgba(245,166,35,0.1)}
+.text-amber\/10{color:rgba(245,166,35,0.1)}
+.border-amber\/10{border-color:rgba(245,166,35,0.1)}
+.bg-amber\/15{background-color:rgba(245,166,35,0.15)}
+.text-amber\/15{color:rgba(245,166,35,0.15)}
+.border-amber\/15{border-color:rgba(245,166,35,0.15)}
+.bg-amber\/20{background-color:rgba(245,166,35,0.2)}
+.text-amber\/20{color:rgba(245,166,35,0.2)}
+.border-amber\/20{border-color:rgba(245,166,35,0.2)}
+.bg-amber\/25{background-color:rgba(245,166,35,0.25)}
+.text-amber\/25{color:rgba(245,166,35,0.25)}
+.border-amber\/25{border-color:rgba(245,166,35,0.25)}
+.bg-amber\/30{background-color:rgba(245,166,35,0.3)}
+.text-amber\/30{color:rgba(245,166,35,0.3)}
+.border-amber\/30{border-color:rgba(245,166,35,0.3)}
+.bg-amber\/40{background-color:rgba(245,166,35,0.4)}
+.text-amber\/40{color:rgba(245,166,35,0.4)}
+.border-amber\/40{border-color:rgba(245,166,35,0.4)}
+.bg-amber\/50{background-color:rgba(245,166,35,0.5)}
+.text-amber\/50{color:rgba(245,166,35,0.5)}
+.border-amber\/50{border-color:rgba(245,166,35,0.5)}
+.bg-amber\/60{background-color:rgba(245,166,35,0.6)}
+.text-amber\/60{color:rgba(245,166,35,0.6)}
+.border-amber\/60{border-color:rgba(245,166,35,0.6)}
+.bg-amber\/70{background-color:rgba(245,166,35,0.7)}
+.text-amber\/70{color:rgba(245,166,35,0.7)}
+.border-amber\/70{border-color:rgba(245,166,35,0.7)}
+.bg-amber\/75{background-color:rgba(245,166,35,0.75)}
+.text-amber\/75{color:rgba(245,166,35,0.75)}
+.border-amber\/75{border-color:rgba(245,166,35,0.75)}
+.bg-amber\/80{background-color:rgba(245,166,35,0.8)}
+.text-amber\/80{color:rgba(245,166,35,0.8)}
+.border-amber\/80{border-color:rgba(245,166,35,0.8)}
+.bg-amber\/90{background-color:rgba(245,166,35,0.9)}
+.text-amber\/90{color:rgba(245,166,35,0.9)}
+.border-amber\/90{border-color:rgba(245,166,35,0.9)}
+.bg-amber\/95{background-color:rgba(245,166,35,0.95)}
+.text-amber\/95{color:rgba(245,166,35,0.95)}
+.border-amber\/95{border-color:rgba(245,166,35,0.95)}
+.bg-cream{background-color:#F4F2EE}
+.text-cream{color:#F4F2EE}
+.border-cream{border-color:#F4F2EE}
+.fill-cream{fill:#F4F2EE}
+.ring-cream{--tw-ring-color:#F4F2EE}
+.from-cream{--tw-gradient-from:#F4F2EE;--tw-gradient-stops:var(--tw-gradient-from),var(--tw-gradient-to,rgba(244,242,238,0))}
+.to-cream{--tw-gradient-to:#F4F2EE}
+.via-cream{--tw-gradient-stops:var(--tw-gradient-from),#F4F2EE,var(--tw-gradient-to,rgba(244,242,238,0))}
+.bg-cream\/5{background-color:rgba(244,242,238,0.05)}
+.text-cream\/5{color:rgba(244,242,238,0.05)}
+.border-cream\/5{border-color:rgba(244,242,238,0.05)}
+.bg-cream\/10{background-color:rgba(244,242,238,0.1)}
+.text-cream\/10{color:rgba(244,242,238,0.1)}
+.border-cream\/10{border-color:rgba(244,242,238,0.1)}
+.bg-cream\/15{background-color:rgba(244,242,238,0.15)}
+.text-cream\/15{color:rgba(244,242,238,0.15)}
+.border-cream\/15{border-color:rgba(244,242,238,0.15)}
+.bg-cream\/20{background-color:rgba(244,242,238,0.2)}
+.text-cream\/20{color:rgba(244,242,238,0.2)}
+.border-cream\/20{border-color:rgba(244,242,238,0.2)}
+.bg-cream\/25{background-color:rgba(244,242,238,0.25)}
+.text-cream\/25{color:rgba(244,242,238,0.25)}
+.border-cream\/25{border-color:rgba(244,242,238,0.25)}
+.bg-cream\/30{background-color:rgba(244,242,238,0.3)}
+.text-cream\/30{color:rgba(244,242,238,0.3)}
+.border-cream\/30{border-color:rgba(244,242,238,0.3)}
+.bg-cream\/40{background-color:rgba(244,242,238,0.4)}
+.text-cream\/40{color:rgba(244,242,238,0.4)}
+.border-cream\/40{border-color:rgba(244,242,238,0.4)}
+.bg-cream\/50{background-color:rgba(244,242,238,0.5)}
+.text-cream\/50{color:rgba(244,242,238,0.5)}
+.border-cream\/50{border-color:rgba(244,242,238,0.5)}
+.bg-cream\/60{background-color:rgba(244,242,238,0.6)}
+.text-cream\/60{color:rgba(244,242,238,0.6)}
+.border-cream\/60{border-color:rgba(244,242,238,0.6)}
+.bg-cream\/70{background-color:rgba(244,242,238,0.7)}
+.text-cream\/70{color:rgba(244,242,238,0.7)}
+.border-cream\/70{border-color:rgba(244,242,238,0.7)}
+.bg-cream\/75{background-color:rgba(244,242,238,0.75)}
+.text-cream\/75{color:rgba(244,242,238,0.75)}
+.border-cream\/75{border-color:rgba(244,242,238,0.75)}
+.bg-cream\/80{background-color:rgba(244,242,238,0.8)}
+.text-cream\/80{color:rgba(244,242,238,0.8)}
+.border-cream\/80{border-color:rgba(244,242,238,0.8)}
+.bg-cream\/90{background-color:rgba(244,242,238,0.9)}
+.text-cream\/90{color:rgba(244,242,238,0.9)}
+.border-cream\/90{border-color:rgba(244,242,238,0.9)}
+.bg-cream\/95{background-color:rgba(244,242,238,0.95)}
+.text-cream\/95{color:rgba(244,242,238,0.95)}
+.border-cream\/95{border-color:rgba(244,242,238,0.95)}
+.bg-ink{background-color:#1C1C1C}
+.text-ink{color:#1C1C1C}
+.border-ink{border-color:#1C1C1C}
+.fill-ink{fill:#1C1C1C}
+.ring-ink{--tw-ring-color:#1C1C1C}
+.from-ink{--tw-gradient-from:#1C1C1C;--tw-gradient-stops:var(--tw-gradient-from),var(--tw-gradient-to,rgba(28,28,28,0))}
+.to-ink{--tw-gradient-to:#1C1C1C}
+.via-ink{--tw-gradient-stops:var(--tw-gradient-from),#1C1C1C,var(--tw-gradient-to,rgba(28,28,28,0))}
+.bg-ink\/5{background-color:rgba(28,28,28,0.05)}
+.text-ink\/5{color:rgba(28,28,28,0.05)}
+.border-ink\/5{border-color:rgba(28,28,28,0.05)}
+.bg-ink\/10{background-color:rgba(28,28,28,0.1)}
+.text-ink\/10{color:rgba(28,28,28,0.1)}
+.border-ink\/10{border-color:rgba(28,28,28,0.1)}
+.bg-ink\/15{background-color:rgba(28,28,28,0.15)}
+.text-ink\/15{color:rgba(28,28,28,0.15)}
+.border-ink\/15{border-color:rgba(28,28,28,0.15)}
+.bg-ink\/20{background-color:rgba(28,28,28,0.2)}
+.text-ink\/20{color:rgba(28,28,28,0.2)}
+.border-ink\/20{border-color:rgba(28,28,28,0.2)}
+.bg-ink\/25{background-color:rgba(28,28,28,0.25)}
+.text-ink\/25{color:rgba(28,28,28,0.25)}
+.border-ink\/25{border-color:rgba(28,28,28,0.25)}
+.bg-ink\/30{background-color:rgba(28,28,28,0.3)}
+.text-ink\/30{color:rgba(28,28,28,0.3)}
+.border-ink\/30{border-color:rgba(28,28,28,0.3)}
+.bg-ink\/40{background-color:rgba(28,28,28,0.4)}
+.text-ink\/40{color:rgba(28,28,28,0.4)}
+.border-ink\/40{border-color:rgba(28,28,28,0.4)}
+.bg-ink\/50{background-color:rgba(28,28,28,0.5)}
+.text-ink\/50{color:rgba(28,28,28,0.5)}
+.border-ink\/50{border-color:rgba(28,28,28,0.5)}
+.bg-ink\/60{background-color:rgba(28,28,28,0.6)}
+.text-ink\/60{color:rgba(28,28,28,0.6)}
+.border-ink\/60{border-color:rgba(28,28,28,0.6)}
+.bg-ink\/70{background-color:rgba(28,28,28,0.7)}
+.text-ink\/70{color:rgba(28,28,28,0.7)}
+.border-ink\/70{border-color:rgba(28,28,28,0.7)}
+.bg-ink\/75{background-color:rgba(28,28,28,0.75)}
+.text-ink\/75{color:rgba(28,28,28,0.75)}
+.border-ink\/75{border-color:rgba(28,28,28,0.75)}
+.bg-ink\/80{background-color:rgba(28,28,28,0.8)}
+.text-ink\/80{color:rgba(28,28,28,0.8)}
+.border-ink\/80{border-color:rgba(28,28,28,0.8)}
+.bg-ink\/90{background-color:rgba(28,28,28,0.9)}
+.text-ink\/90{color:rgba(28,28,28,0.9)}
+.border-ink\/90{border-color:rgba(28,28,28,0.9)}
+.bg-ink\/95{background-color:rgba(28,28,28,0.95)}
+.text-ink\/95{color:rgba(28,28,28,0.95)}
+.border-ink\/95{border-color:rgba(28,28,28,0.95)}
+</style>
+<style>
+#page-home { font-family: 'Inter', sans-serif; background-color: #F4F2EE; color: #1C1C1C; }
+.font-barlow { font-family: 'Barlow Condensed', sans-serif; }
+.hero-bg { background: linear-gradient(135deg, #1A2E4A 0%, #0f1e33 60%, #162440 100%); }
+.texture-bg { background-color: #F4F2EE; background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%231A2E4A' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E"); }
+.amber-strip { background-color: #F5A623; }
+</style>
+<style>
+  #page-about { background-color: #F4F2EE; color: #1C1C1C; font-family: 'Inter', sans-serif; }
+  .font-barlow { font-family: 'Barlow Condensed', sans-serif; }
+  .bg-cream { background-color: #F4F2EE; }
+  .bg-cream-dark { background-color: #EDE9E2; }
+  .text-navy { color: #1A2E4A; }
+  .text-amber { color: #F5A623; }
+  .bg-navy { background-color: #1A2E4A; }
+  .bg-amber { background-color: #F5A623; }
+  .border-amber { border-color: #F5A623; }
+  .texture-line { border-top: 2px solid #F5A623; }
+</style>
+<style>
+#page-services { background-color: #F4F2EE; color: #1C1C1C; font-family: 'Inter', sans-serif; }
+h1, h2, h3, .headline { font-family: 'Barlow Condensed', sans-serif; }
+.accent { color: #F5A623; }
+.bg-night { background-color: #1A2E4A; }
+.bg-amber { background-color: #F5A623; }
+.border-amber { border-color: #F5A623; }
+.text-night { color: #1A2E4A; }
+.service-block:nth-child(even) .service-inner { flex-direction: row-reverse; }
+</style>
+<style>
+  #page-contact { font-family: 'Inter', sans-serif; background-color: #F4F2EE; color: #1C1C1C; }
+  .font-barlow { font-family: 'Barlow Condensed', sans-serif; }
+  .bg-cream { background-color: #F4F2EE; }
+  .bg-night { background-color: #1A2E4A; }
+  .text-amber { color: #F5A623; }
+  .bg-amber { background-color: #F5A623; }
+  .border-amber { border-color: #F5A623; }
+  .text-night { color: #1A2E4A; }
+  .texture-line { background-image: repeating-linear-gradient(90deg, rgba(26,46,74,0.04) 0px, rgba(26,46,74,0.04) 1px, transparent 1px, transparent 40px); }
+</style>
+<style>* { box-sizing: border-box; } html, body { margin: 0; padding: 0; }</style>
+</head>
+<body>
+
+<nav style="position:fixed;top:0;left:0;right:0;z-index:9999;background:rgba(10,10,20,0.85);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border-bottom:1px solid rgba(255,255,255,0.08);padding:0 32px;height:64px;display:flex;align-items:center;justify-content:space-between;">
+  <a href="index.html"><img src="http://www.sm-elektrotechnik.de/logo-sm-elektro.jpg" alt="SM Elektrotechnik GmbH" style="height:44px;width:auto;display:block;"></a>
+  <div style="display:flex;gap:32px;align-items:center;">
+    <a href="index.html" style="color:rgba(255,255,255,0.9);text-decoration:none;font-size:0.875rem;font-weight:500;letter-spacing:0.3px;transition:color 0.2s;">Home</a>
+    <a href="about.html" style="color:rgba(255,255,255,0.55);text-decoration:none;font-size:0.875rem;font-weight:500;letter-spacing:0.3px;transition:color 0.2s;">Über uns</a>
+    <a href="services.html" style="color:rgba(255,255,255,0.55);text-decoration:none;font-size:0.875rem;font-weight:500;letter-spacing:0.3px;transition:color 0.2s;">Leistungen</a>
+    <a href="contact.html" style="color:white;text-decoration:none;font-size:0.875rem;font-weight:600;background:linear-gradient(135deg,#6366f1,#8b5cf6);padding:8px 20px;border-radius:8px;transition:opacity 0.2s;">Kontakt</a>
+  </div>
+</nav>
+
+<!-- SCHEMA.ORG LOCAL BUSINESS -->
+
+
+<!-- HERO -->
+<section class="hero-bg min-h-screen flex items-center relative" style="min-height: calc(100vh - 64px);">
+  <div class="absolute inset-0 bg-night opacity-10"></div>
+  <div class="relative z-10 max-w-7xl mx-auto px-6 lg:px-12 py-20 grid lg:grid-cols-2 gap-12 items-center w-full">
+    <div>
+      <div class="inline-block bg-amber px-3 py-1 mb-6">
+        <span class="font-barlow text-night font-700 text-sm uppercase tracking-widest">Waghäusel · Rhein-Neckar-Kreis</span>
+      </div>
+      <h1 class="font-barlow font-900 text-white leading-none mb-6" style="font-size: clamp(3rem, 8vw, 6rem); letter-spacing: -0.01em;">
+        Elektrotechnik.<br>
+        <span class="text-amber">Sauber gemacht.</span>
+      </h1>
+      <p class="text-white text-lg font-inter font-300 mb-10 max-w-xl leading-relaxed" style="text-shadow: 0 1px 3px rgba(0,0,0,0.4);">
+        Ihr Fachbetrieb in Waghäusel und der Region Rhein-Neckar — von der Planung bis zur Abnahme. Thomas Schneider und Fabian Müller sind persönlich vor Ort.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4">
+        <a href="tel:+4972544039660" class="inline-flex items-center gap-3 bg-amber text-night font-inter font-700 px-7 py-4 text-base hover:bg-yellow-400 transition-colors">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10a19.79 19.79 0 01-3.07-8.67A2 2 0 012 .84h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 8.09a16 16 0 006.29 6.29l1.42-1.42a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+          Jetzt anrufen: 0 72 54 / 40 39 66 0
+        </a>
+        <a href="contact.html" class="inline-flex items-center gap-3 border-2 border-white text-white font-inter font-600 px-7 py-4 text-base hover:bg-white hover:text-night transition-colors">
+          Angebot anfragen
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="absolute bottom-8 left-1/2 -translate-x-1/2">
+    <div class="w-px h-12 bg-amber opacity-60 mx-auto"></div>
+  </div>
+</section>
+
+<!-- TRUST BAND -->
+<section class="bg-night py-10 px-6">
+  <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
+    <div class="flex items-center gap-4 text-white">
+      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#F5A623" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+      <span class="font-inter text-sm font-400">Eingetragener Elektrofachbetrieb</span>
+    </div>
+    <div class="hidden md:block w-px h-8 bg-white opacity-20"></div>
+    <div class="flex items-center gap-4 text-white">
+      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#F5A623" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+      <span class="font-inter text-sm font-400">Antwort innerhalb eines Werktages</span>
+    </div>
+    <div class="hidden md:block w-px h-8 bg-white opacity-20"></div>
+    <div class="flex items-center gap-4 text-white">
+      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#F5A623" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+      <span class="font-inter text-sm font-400">Persönlich vor Ort im Rhein-Neckar-Kreis</span>
+    </div>
+    <div class="hidden md:block w-px h-8 bg-white opacity-20"></div>
+    <div class="flex items-center gap-4 text-white">
+      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#F5A623" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+      <span class="font-inter text-sm font-400">HRB 733611 · AG Mannheim</span>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="py-24 px-6 texture-bg">
+  <div class="max-w-7xl mx-auto">
+    <div class="grid lg:grid-cols-3 gap-0 items-start">
+      <div class="lg:col-span-1 lg:pr-16 mb-12 lg:mb-0">
+        <div class="w-12 h-1 bg-amber mb-6"></div>
+        <h2 class="font-barlow font-800 text-night leading-none mb-6" style="font-size: clamp(2.5rem, 5vw, 4rem);">Was wir<br>können</h2>
+        <p class="font-inter text-ink font-400 text-base leading-relaxed mb-8">
+          Elektrotechnik von Waghäusel aus — für Privathaushalte, Gewerbebetriebe und Industrieanlagen im Rhein-Neckar-Kreis. Kein Auftrag zu klein, kein Projekt zu komplex.
+        </p>
+        <a href="services.html" class="inline-flex items-center gap-2 font-inter font-600 text-night border-b-2 border-amber pb-1 text-sm hover:text-amber transition-colors">
+          Alle Leistungen ansehen
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+      <div class="lg:col-span-2 grid sm:grid-cols-2 gap-px bg-night">
+        <div class="bg-cream p-8 hover:bg-white transition-colors">
+          <div class="w-10 h-10 mb-5 flex items-center justify-center border border-night">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#1A2E4A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="18" rx="1"/><path d="M8 3v18M16 3v18M2 9h20M2 15h20"/></svg>
+          </div>
+          <h3 class="font-barlow font-700 text-night text-2xl mb-3">Elektroinstallation<br>Neubau & Sanierung</h3>
+          <p class="font-inter text-sm text-ink font-400 leading-relaxed">Vom Rohbau bis zur fertig verkabelten Wohnung. Wir planen, verlegen und nehmen ab — sauber, termingerecht, ohne Überraschungen auf der Rechnung.</p>
+        </div>
+        <div class="bg-night p-8">
+          <div class="w-10 h-10 mb-5 flex items-center justify-center border border-amber">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#F5A623" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+          </div>
+          <h3 class="font-barlow font-700 text-white text-2xl mb-3">Photovoltaik &<br>Ladesysteme</h3>
+          <p class="font-inter text-sm text-white font-400 leading-relaxed opacity-80">Solar auf dem Dach, Wallbox in der Garage. Wir installieren und nehmen in Betrieb — im gesamten Raum Karlsruhe und Heidelberg.</p>
+        </div>
+        <div class="bg-night p-8">
+          <div class="w-10 h-10 mb-5 flex items-center justify-center border border-amber">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#F5A623" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <h3 class="font-barlow font-700 text-white text-2xl mb-3">Sprechanlagen &<br>Sicherheitstechnik</h3>
+          <p class="font-inter text-sm text-white font-400 leading-relaxed opacity-80">Zutrittskontrolle, Klingelsysteme und Überwachungstechnik für Gebäude. Diskret geplant, fachgerecht eingebaut.</p>
+        </div>
+        <div class="bg-cream p-8 hover:bg-white transition-colors">
+          <div class="w-10 h-10 mb-5 flex items-center justify-center border border-night">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#1A2E4A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"/></svg>
+          </div>
+          <h3 class="font-barlow font-700 text-night text-2xl mb-3">Wartung &<br>Prüfung</h3>
+          <p class="font-inter text-sm text-ink font-400 leading-relaxed">DGUV-Prüfungen, E-Checks und Wartungsverträge. Dokumentiert, fristgerecht, mit direktem Ansprechpartner.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STORY / TEAM TEASER -->
+<section class="py-24 px-6 bg-white">
+  <div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 items-center">
+    <div class="order-2 lg:order-1">
+      <div class="w-12 h-1 bg-amber mb-6"></div>
+      <h2 class="font-barlow font-800 text-night leading-none mb-8" style="font-size: clamp(2.2rem, 4.5vw, 3.5rem);">Zwei Geschäftsführer.<br>Ein Betrieb.<br>Eine Adresse.</h2>
+      <p class="font-inter text-base text-ink font-400 leading-relaxed mb-6">
+        Thomas Schneider und Fabian Müller führen die SM Elektrotechnik GmbH gemeinsam — beide mit Haftung für das Ergebnis, nicht nur für das Angebot. In Waghäusel kennen wir die Baustellen, die Bauträger und die lokalen Anforderungen.
+      </p>
+      <p class="font-inter text-base text-ink font-400 leading-relaxed mb-8">
+        Wir sind pünktlich. Wir hinterlassen saubere Baustellen. Wir rufen zurück. Das sind keine Versprechen — das ist wie wir arbeiten.
+      </p>
+      <div class="grid sm:grid-cols-3 gap-6 mb-10">
+        <div class="border-l-2 border-amber pl-4">
+          <div class="font-barlow font-800 text-night text-lg">Termintreue</div>
+          <div class="font-inter text-xs text-ink opacity-70 mt-1">Vereinbarte Termine werden gehalten — oder Sie werden rechtzeitig informiert.</div>
+        </div>
+        <div class="border-l-2 border-amber pl-4">
+          <div class="font-barlow font-800 text-night text-lg">Saubere Ausführung</div>
+          <div class="font-inter text-xs text-ink opacity-70 mt-1">Wir verlassen die Baustelle so, wie wir sie vorgefunden haben — oder besser.</div>
+        </div>
+        <div class="border-l-2 border-amber pl-4">
+          <div class="font-barlow font-800 text-night text-lg">Direkte Kommunikation</div>
+          <div class="font-inter text-xs text-ink opacity-70 mt-1">Kein Callcenter. Sie sprechen mit den Menschen, die Ihren Auftrag ausführen.</div>
+        </div>
+      </div>
+      <a href="about.html" class="inline-flex items-center gap-2 bg-night text-white font-inter font-600 px-7 py-4 text-sm hover:bg-opacity-90 transition-colors">
+        Wer wir sind
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+    </div>
+    <div class="order-1 lg:order-2 flex flex-col gap-6">
+      <div class="bg-cream border border-night border-opacity-10 p-8">
+        <div class="flex items-start gap-5">
+          <div class="w-14 h-14 bg-night flex items-center justify-center flex-shrink-0">
+            <span class="font-barlow font-900 text-amber text-xl">TS</span>
+          </div>
+          <div>
+            <div class="font-barlow font-700 text-night text-xl mb-2">Thomas Schneider</div>
+            <div class="font-inter text-xs text-ink opacity-60 mb-3 uppercase tracking-wide">Geschäftsführer · SM Elektrotechnik GmbH</div>
+            <p class="font-inter text-sm text-ink font-400 leading-relaxed italic">
+              „Wir wollen keine Aufträge abarbeiten. Wir wollen Installationen, auf die wir zurückschauen und sagen können: Das sitzt."
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="bg-night p-8">
+        <div class="flex items-start gap-5">
+          <div class="w-14 h-14 bg-amber flex items-center justify-center flex-shrink-0">
+            <span class="font-barlow font-900 text-night text-xl">FM</span>
+          </div>
+          <div>
+            <div class="font-barlow font-700 text-white text-xl mb-2">Fabian Müller</div>
+            <div class="font-inter text-xs text-white opacity-50 mb-3 uppercase tracking-wide">Geschäftsführer · SM Elektrotechnik GmbH</div>
+            <p class="font-inter text-sm text-white font-400 leading-relaxed italic opacity-90">
+              „Waghäusel ist unser Zuhause. Hier empfehlen uns Nachbarn weiter — das verpflichtet mehr als jedes Zertifikat."
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES STRIP — REGION -->
+<section class="py-16 px-6 texture-bg border-t border-b border-night border-opacity-10">
+  <div class="max-w-7xl mx-auto">
+    <div class="flex flex-col md:flex-row items-center gap-8 justify-between">
+      <div>
+        <h3 class="font-barlow font-700 text-night text-3xl mb-2">Unser Einsatzgebiet</h3>
+        <p class="font-inter text-sm text-ink opacity-70">Von Waghäusel aus im gesamten Rhein-Neckar-Kreis tätig</p>
+      </div>
+      <div class="flex flex-wrap gap-3">
+        <span class="font-inter text-sm font-500 border border-night text-night px-4 py-2">Waghäusel</span>
+        <span class="font-inter text-sm font-500 border border-night text-night px-4 py-2">Karlsruhe</span>
+        <span class="font-inter text-sm font-500 border border-night text-night px-4 py-2">Heidelberg</span>
+        <span class="font-inter text-sm font-500 border border-night text-night px-4 py-2">Mannheim</span>
+        <span class="font-inter text-sm font-500 bg-amber border border-amber text-night px-4 py-2">Rhein-Neckar-Kreis</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONVERSION SECTION -->
+<section class="amber-strip py-20 px-6">
+  <div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 items-center">
+    <div>
+      <div class="w-12 h-1 bg-night mb-6"></div>
+      <h2 class="font-barlow font-900 text-night leading-none mb-6" style="font-size: clamp(2.5rem, 5vw, 4rem);">Ein Anruf genügt.</h2>
+      <p class="font-inter text-base text-night font-400 leading-relaxed mb-8 opacity-80">
+        Beschreiben Sie kurz, was ansteht. Wir hören zu und sagen Ihnen ehrlich, was sinnvoll ist und was es kostet — ohne Umwege über eine Hotline.
+      </p>
+      <div class="space-y-4 mb-10">
+        <div class="flex items-center gap-4">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#1A2E4A" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10a19.79 19.79 0 01-3.07-8.67A2 2 0 012 .84h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 8.09a16 16 0 006.29 6.29l1.42-1.42a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+          <a href="tel:+4972544039660" class="font-barlow font-800 text-night text-3xl hover:underline">0 72 54 / 40 39 66 0</a>
+        </div>
+        <div class="flex items-center gap-4">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#1A2E4A" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          <a href="mailto:info@sm-elektrotechnik.de" class="font-inter font-500 text-night text-base hover:underline">info@sm-elektrotechnik.de</a>
+        </div>
+        <div class="flex items-start gap-4">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#1A2E4A" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="mt-1"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          <span class="font-inter font-400 text-night text-base">Heinrich-Hertz-Straße 3<br>68753 Waghäusel</span>
+        </div>
+      </div>
+      <a href="contact.html" class="inline-flex items-center gap-2 bg-night text-white font-inter font-600 px-7 py-4 text-sm hover:bg-opacity-90 transition-colors">
+        Angebot schriftlich anfragen
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+    </div>
+    <div class="bg-white p-8 shadow-sm">
+      <h3 class="font-barlow font-700 text-night text-2xl mb-6">Kurze Nachricht genügt</h3>
+      <form action="contact.html" method="GET" class="space-y-4">
+        <div class="grid sm:grid-cols-2 gap-4">
+          <div>
+            <label class="block font-inter text-xs font-600 text-night mb-2 uppercase tracking-wide">Ihr Name</label>
+            <input type="text" name="name" placeholder="Max Mustermann" class="w-full border border-night border-opacity-20 bg-cream px-4 py-3 font-inter text-sm text-ink focus:outline-none focus:border-amber focus:border-opacity-100">
+          </div>
+          <div>
+            <label class="block font-inter text-xs font-600 text-night mb-2 uppercase tracking-wide">Telefon</label>
+            <input type="tel" name="tel" placeholder="0 72 54 / ..." class="w-full border border-night border-opacity-20 bg-cream px-4 py-3 font-inter text-sm text-ink focus:outline-none focus:border-amber focus:border-opacity-100">
+          </div>
+        </div>
+        <div>
+          <label class="block font-inter text-xs font-600 text-night mb-2 uppercase tracking-wide">Ihre Nachricht</label>
+          <textarea name="message" rows="4" placeholder="Kurz beschreiben, was ansteht ..." class="w-full border border-night border-opacity-20 bg-cream px-4 py-3 font-inter text-sm text-ink focus:outline-none focus:border-amber focus:border-opacity-100 resize-none"></textarea>
+        </div>
+        <button type="submit" class="w-full bg-night text-white font-inter font-600 px-7 py-4 text-sm hover:bg-opacity-90 transition-colors">
+          Nachricht senden
+        </button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-night py-12 px-6">
+  <div class="max-w-7xl mx-auto grid md:grid-cols-3 gap-10">
+    <div>
+      <a href="index.html"><img src="http://www.sm-elektrotechnik.de/logo-sm-elektro.jpg" alt="SM Elektrotechnik GmbH" style="height:44px;width:auto;display:block;" class="mb-4"></a>
+      <p class="font-inter text-sm text-white opacity-60 leading-relaxed">Eingetragener Elektrofachbetrieb im Rhein-Neckar-Kreis. HRB 733611 · AG Mannheim.</p>
+    </div>
+    <div>
+      <div class="font-barlow font-700 text-white text-lg mb-4">Navigation</div>
+      <div class="flex flex-col gap-2">
+        <a href="index.html" class="font-inter text-sm text-white opacity-60 hover:opacity-100 transition-opacity">Home</a>
+        <a href="about.html" class="font-inter text-sm text-white opacity-60 hover:opacity-100 transition-opacity">Über uns</a>
+        <a href="services.html" class="font-inter text-sm text-white opacity-60 hover:opacity-100 transition-opacity">Leistungen</a>
+        <a href="contact.html" class="font-inter text-sm text-white opacity-60 hover:opacity-100 transition-opacity">Kontakt</a>
+      </div>
+    </div>
+    <div>
+      <div class="font-barlow font-700 text-white text-lg mb-4">Kontakt</div>
+      <div class="flex flex-col gap-2">
+        <a href="tel:+4972544039660" class="font-inter text-sm text-white opacity-60 hover:opacity-100 transition-opacity">0 72 54 / 40 39 66 0</a>
+        <a href="mailto:info@sm-elektrotechnik.de" class="font-inter text-sm text-white opacity-60 hover:opacity-100 transition-opacity">info@sm-elektrotechnik.de</a>
+        <span class="font-inter text-sm text-white opacity-60">Heinrich-Hertz-Straße 3, 68753 Waghäusel</span>
+      </div>
+    </div>
+  </div>
+  <div class="max-w-7xl mx-auto mt-10 pt-6 border-t border-white border-opacity-10">
+    <p class="font-inter text-xs text-white opacity-40 text-center">© 2024 SM Elektrotechnik GmbH · Alle Rechte vorbehalten</p>
+  </div>
+
+  <div style="border-top:1px solid rgba(255,255,255,0.1);margin-top:16px;padding-top:12px;text-align:center;">
+    <a href="impressum.html" style="color:rgba(255,255,255,0.4);text-decoration:none;font-size:0.75rem;margin:0 12px;">Impressum</a>
+    <a href="datenschutz.html" style="color:rgba(255,255,255,0.4);text-decoration:none;font-size:0.75rem;margin:0 12px;">Datenschutz</a>
+  </div>
+</footer>
+</body>
+</html>
